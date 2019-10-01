@@ -2,4 +2,128 @@
 
 /* 回答はここに書いてね */
 
+/* Q7_1 */
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.q7_1_left {
+  float: left;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* border-box　→　paddingとborderがwidthとheightの中に含まれるようになる
+余白や境界線の太さに影響されずにボックスの大きさを決めることが可能 */
+
+.q7_1_left{
+    margin-left: 50px;
+}
+/* 真ん中の余白 */
+
+.q7_1_left:nth-child(1) {
+  margin-left: 0;
+}
+
+.q7_1_left {
+  width: 225px;
+}
+
+/* Q7_2 */
+.q7_twrap{
+  display: table-cell;
+  width: 225px;
+  /* box-sizing: border-box; */
+  padding-left : 50px;
+}
+
+.q7_in{
+  display: table;
+   border-collapse: separate;
+  /* border-spacing: 50px 0; */
+}
+/* border-spacingは（上下）、（左右）両2サイドのくくりでしか余白を作れない */
+
+
+.q7_twrap:nth-child(1) {
+  padding: 0;
+}
+
+/* Q7_3 */
+
+.q7_3{
+  font-size: 0;
+
+}
+
+.q7inline{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 50px;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 225px;
+
+}
+
+.q7inline:nth-child(1) {
+  margin-left: 0;
+}
+
+/* Q7_4 */
+
+.q7_flexbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;;
+}
+
+.flex_text {
+  font-size: 16px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 0 20px;
+
+}
+
+
+
+.q7--margin .q7__box {
+  vertical-align: top;
+}
+.q7--margin .q7__box__text {
+  font-size: 16px;
+}
+
+.q_7_4_inner{
+  font-size: 0;
+  /* 親要素のfont-sizeを0にし、子要素で再度font-sizeを指定することで、余白を消す */
+
+}
+
+.q_7_4_box{
+  display: inline-block;
+  width: 300px;
+
+
+}
+
+.q_7_4_box_flexible{
+  display: inline-block;
+  width: 100%;
+  margin-left: -400px;
+  padding-left: 450px;
+  box-sizing: border-box;
+}
+
+.q_7_4_text{
+  font-size: 16px;
+}
+
+
+
 /* 回答はここに書いてね */

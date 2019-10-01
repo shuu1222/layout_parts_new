@@ -2,4 +2,44 @@
 
 /* 回答はここに書いてね */
 
+.dialog {
+  position: relative; /* 三角の位置を固定 */
+  width: 500px;
+  padding: 20px;
+  background: #fff;
+  border: 5px solid #222;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0 auto;
+  text-align: left;
+}
+.dialog::before,
+.dialog::after { /* 三角 */
+  content: '';
+  border: 25px solid transparent;
+  position: absolute;
+  left: 50%;
+  margin-left: -45%;
+}
+.dialog::before { /* 線になる */
+  border-top-color: #222;
+  bottom: -50px;
+}
+.dialog::after { /* 地 */
+  border-top-color: #fff;
+  bottom: -43px;
+}
+
+/* .test{
+display: inline-block;
+ vertical-align: middle;
+ border: 40px solid;
+ border-top-color: red;
+ border-bottom-color: transparent;
+ border-left-color: transparent;
+ border-right-color: transparent;
+}
+三角のテスト用 */
 /* 回答はここに書いてね */

@@ -1,5 +1,80 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.text_zoom{
+  position: relative;
+  height: 333px;
+  width: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+
+}
+
+.car_pic{
+position: relative;
+overflow: hidden;
+cursor: pointer;
+transition-duration: 0.5s; /* かかる時間 */
+}
+
+.text_zoom:hover .car_pic{
+transform: scale(1.5,1.5);
+cursor: pointer;
+}
+
+.img_back{
+position: absolute;
+width: 500px;
+bottom: -333px;
+background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+transition-duration: 0.5s;
+}
+
+.text_zoom:hover .img_back{
+  bottom: 0;
+}
+
+.img_text{
+  color: #FFF;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+/* animation */
+
+.loading{
+  /* background-color: #ecf1f2; */
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  /* border-radius: 50%; */
+  /* z-index: 10; */
+}
+
+.loadanime{
+  width: 5em;
+  height: 5em;
+  border: 10px solid #ecf1f2;
+  border-top-color: #00bcd4;
+  /* border-topで□上の部分〇の四分の一が指定できる */
+  animation: loaderAnime 1s infinite linear;
+  /* 動かすにはkeyframeが必要 */
+  /* linearは一定の速度で変化します　infinateで無限に */
+  border-radius: 50%;
+  margin: 0 auto;
+  /* z-index: 11; */
+
+}
+@keyframes loaderAnime {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /* unity animationのキーフレームと同じ */
+
 
 /* 回答はここに書いてね */

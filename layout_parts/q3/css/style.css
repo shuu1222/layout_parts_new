@@ -2,4 +2,44 @@
 
 /* 回答はここに書いてね */
 
+
+.weight_table{
+  border: 1px solid #dedede;
+  width: 100%;
+
+}
+
+.weight_table th,
+.weight_table td{
+  border: 1px solid #dedede;
+  padding: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+
+.menutable > td:nth-child(1){
+  background-color: #2244aa;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+}
+
+/* .weight_table > thead > tr > td{
+  background-color: #2244aa;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+} */
+.weight_table > thead > tr:first-child > td{
+  background-color: #2244aa;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.weight_table > tbody > tr:last-child > td{
+  border-top: dashed #000 2px;
+}
 /* 回答はここに書いてね */
