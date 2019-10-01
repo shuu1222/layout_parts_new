@@ -126,16 +126,18 @@
                       </div>
                     </div>
                 </li>
-
+                  <!-- selectには疑似要素を指定できないのでwrapする -->
                 <li class="clearfix form_width">
-                  <label class="what_to_input">出身
-                      <select class="q8_input q8_select" name="city" >
-                        <option value="tokyo">東京</option>
-                        <option value="chiba">千葉</option>
-                        <option value="saitama">埼玉</option>
-                        <option value="kanagawa">神奈川</option>
-                      </select>
+                  <div class="select_wrap">
+                    <label class="what_to_input">出身
+                    <select class="q8_input q8_select_input" name="city" id="" >
+                      <option value="tokyo">東京</option>
+                      <option value="chiba">千葉</option>
+                      <option value="saitama">埼玉</option>
+                      <option value="kanagawa">神奈川</option>
+                    </select>
                   </label>
+                  </div>
                 </li>
 
                 <li class="clearfix form_width">
@@ -151,11 +153,12 @@
                   </label>
                 </li>
 
-                <li class="clearfix check_box">
-                  <div class="q8_check">
-                    <input type="checkbox" name="twenry" id="q8_checkbox">
-                    <label for="q8_checkbox" class="checklabel">20歳以上です。</label>
-                  </div>
+
+                <li class="clearfix form_width">
+                  <label>
+                      <input type="checkbox" name="twenty" class="checkbox-input">
+                      <span class="checkbox-parts">20歳以上です</span>
+                    </label>
                 </li>
 
 
@@ -167,13 +170,12 @@
 
 
       <!-- 箱、formbox rightに右側のフォームを入れる -->
+      <!-- textareaタグの開始タグと終了タグが同じ行にないと中のplaceholderが表示されない -->
       <div class="formbox_right">
           <div class="clearfix memo_box">
-            <textarea class="memo" type="text" name="" value="">
-            </textarea>
+            <textarea placeholder="何かあれば入力してください。" class="memo" type="text" name="" value=""　></textarea>
           </div>
       </div>
-
 
 
 

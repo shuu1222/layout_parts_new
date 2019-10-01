@@ -344,9 +344,35 @@ input:focus, textarea:focus{
   margin-right: 5px;
 }
 
-.q8_select{
+.q8_select_input{
   width: 180px;
 }
+
+
+
+.select_wrap {
+    position: relative;
+}
+
+/* 三角の作成
+1、四角のボーダーを作成
+2、隣り合わせのボーダーを2辺透明 (transparent) にします。
+3、transformプロパティを使用して45度回転させます。 */
+
+.select_wrap:before {
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid;
+  border-color:  transparent #ECF1F2 #ECF1F2 transparent;
+  transform: rotate(45deg);
+  content: "";
+  pointer-events: none;
+}
+/* pointer-eventsというプロパティでクリック出来ないように */
 
 .q8_radio{
   display: inline-block;
@@ -417,39 +443,33 @@ line-height: 26px;
 }
 
 
-
-.q8__check input[type=checkbox]{
-display: none;
+.checkbox-input{
+  display: none;
+}
+.checkbox-parts{
+  padding-left: 20px;
+  position:relative;
+}
+.checkbox-parts::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
 }
 
-.checklabel {
-position: relative;
-padding: 0 0 0 42px;;
-}
-
-.checklabel::after{
-  position: absolute; /* ボックスの位置を指定する */
-content: ""; /* ボックスのコンテンツ */
-display: block; /* ブロックレベル要素化する */
-top: 50%; /* 上部から配置の基準位置を決める */
-left: 15px; /* 左から配置の基準位置を決める */
-margin-top: -10px; /* チェック枠の位置 */
-width: 15px; /* ボックスの横幅を指定する */
-height: 15px; /* ボックスの高さを指定する */
-border: 2px solid #aaaaaa; /* ボックスの境界線を実線で指定する */
-border-radius: 6px; /* ボックスの角丸を指定する */
-}
-
-.checklabel:before {
-left: 21px; /* 左から配置の基準位置を決める */
-margin-top: -7px; /* チェックマークの位置 */
-width: 5px; /* ボックスの横幅を指定する */
-height: 9px; /* ボックスの高さを指定する */
-border-right: 3px solid #0171bd; /* 境界線（右）のスタイルを指定する */
-border-bottom: 3px solid #0171bd; /* 境界線（下）のスタイルを指定する */
-transform: rotate(45deg); /* 要素を回転させる */
-opacity: 0; /* 要素を透過指定する */
-}
-input[type=checkbox]:checked + .sample_label:before {
-opacity: 1; /* 要素を表示する */
-}
+/* チェックの部分 */
+.checkbox-input:checked + .checkbox-parts::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 5px;
+  width: 8px;
+  height: 15px;
+  transform: rotate(50deg);
+  border-bottom: 2px solid #00bcd4;
+  border-right: 2px solid #00bcd4;
