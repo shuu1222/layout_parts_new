@@ -107,63 +107,59 @@
     <div class="form_wrapp">
 
       <!-- 箱、formbox leftに左側のフォームを入れる -->
-
+    <form>
       <ul class="formbox_left">
-                <li class="clearfix form_width">
-                  <label class="what_to_input">名前
-                    <input class="q8_input" type="text" required="required">
-                  </label>
-                </li>
+        <li class="clearfix form_width">
+          <label class="what_to_input">名前<span class="required">*</span>
+            <input class="q8_input" type="text" name="name" required="required">
+          </label>
+        </li>
 
-                <li class="clearfix form_width">
-                        <div class="q8_radio">
-                          <div class="what_to_input radio_title">性別</div>
-                          <div class="q8_input_r">
-                            <input type="radio" name="gender" id="select1" value="1" checked="">
-                              <label class="radio_label" for="select1">男性</label>
-                            <input type="radio" name="gender" id="select2" value="0">
-                              <label class="radio_label" for="select2">女性</label>
-                      </div>
-                    </div>
-                </li>
-                  <!-- selectには疑似要素を指定できないのでwrapする -->
-                <li class="clearfix form_width">
-                  <div class="select_wrap">
-                    <label class="what_to_input">出身
-                    <select class="q8_input q8_select_input" name="city" id="" >
-                      <option value="tokyo">東京</option>
-                      <option value="chiba">千葉</option>
-                      <option value="saitama">埼玉</option>
-                      <option value="kanagawa">神奈川</option>
-                    </select>
-                  </label>
-                  </div>
-                </li>
+        <li class="clearfix form_width">
+          <div class="q8_radio">
+            <div class="what_to_input radio_title">性別</div>
+              <div class="q8_input_r">
+                <input type="radio" name="gender" id="select1" value="male">
+                <label class="radio_label" for="select1">男性</label>
+                <input type="radio" name="gender" id="select2" value="female">
+                <label class="radio_label" for="select2">女性</label>
+              </div>
+          </div>
+        </li>
+          <!-- selectには疑似要素を指定できないのでwrapする -->
+        <li class="clearfix form_width">
+          <div class="select_wrap">
+            <label class="what_to_input">出身
+              <select class="q8_input q8_select_input" name="hometown" id="" >
+                <option value="tokyo">東京</option>
+                <option value="chiba">千葉</option>
+                <option value="saitama">埼玉</option>
+                <option value="kanagawa">神奈川</option>
+              </select>
+            </label>
+          </div>
+        </li>
 
-                <li class="clearfix form_width">
-                  <label class="what_to_input">Eメール
-                      <input class="q8_input"  placeholder="ex)hoge@gmail.com" type="">
-                     </label>
-                </li>
-
-
-                <li class="clearfix form_width">
-                  <label class="what_to_input">電話番号
-                      <input class="q8_input"  placeholder="ex)08012345678" type="">
-                  </label>
-                </li>
+        <li class="clearfix form_width">
+          <label class="what_to_input">Eメール<span class="required">*</span>
+            <input class="q8_input"  placeholder="ex)hoge@gmail.com" type="text" name="email" required="required">
+          </label>
+        </li>
 
 
-                <li class="clearfix form_width">
-                  <label>
-                      <input type="checkbox" name="twenty" class="checkbox-input">
-                      <span class="checkbox-parts">20歳以上です</span>
-                    </label>
-                </li>
+        <li class="clearfix form_width">
+          <label class="what_to_input">電話番号
+              <input class="q8_input"  placeholder="ex)08012345678" type="text" name="tel" required="">
+          </label>
+        </li>
 
-
-            </ul>
-
+        <li class="clearfix form_width">
+          <label>
+            <input type="checkbox" name="twenty" class="checkbox-input">
+            <span class="checkbox-parts">20歳以上です</span>
+          </label>
+        </li>
+    </ul>
 
 
 
@@ -171,12 +167,12 @@
 
       <!-- 箱、formbox rightに右側のフォームを入れる -->
       <!-- textareaタグの開始タグと終了タグが同じ行にないと中のplaceholderが表示されない -->
+
       <div class="formbox_right">
           <div class="clearfix memo_box">
-            <textarea placeholder="何かあれば入力してください。" class="memo" type="text" name="" value=""　></textarea>
+            <textarea placeholder="何かあれば入力してください。" class="memo" type="text" name="message"></textarea>
           </div>
       </div>
-
 
 
 
@@ -185,9 +181,10 @@
       <div class="submit_button">
         <button class="button_s" type="submit">送信</button>
       </div>
-    </div>
-  </li>
+      </li>
 
+    </form>
+  </div>
 
 
 

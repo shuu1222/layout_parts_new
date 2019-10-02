@@ -16,30 +16,19 @@
   text-align: left;
 }
 .dialog::before,
-.dialog::after { /* 三角 */
-  content: '';
-  border: 25px solid transparent;
+.dialog::after { /* 三角 の位置*/
   position: absolute;
-  left: 50%;
-  margin-left: -45%;
+  left: 5%;
+  border: 25px solid transparent;
+  content: '';
 }
-.dialog::before { /* 線になる */
+.dialog::before { /* 黒い三角*/
   border-top-color: #222;
   bottom: -50px;
 }
-.dialog::after { /* 地 */
+.dialog::after { /* 白地 */
   border-top-color: #fff;
   bottom: -43px;
 }
 
-/* .test{
-display: inline-block;
- vertical-align: middle;
- border: 40px solid;
- border-top-color: red;
- border-bottom-color: transparent;
- border-left-color: transparent;
- border-right-color: transparent;
-}
-三角のテスト用 */
 /* 回答はここに書いてね */
