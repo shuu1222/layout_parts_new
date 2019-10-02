@@ -37,7 +37,6 @@
 .q7_twrap{
   display: table-cell;
   width: 225px;
-  /* box-sizing: border-box; */
   padding-left : 50px;
 }
 
@@ -90,7 +89,9 @@
 
 }
 
-
+.box_width{
+  width:225px;
+}
 
 .q7--margin .q7__box {
   vertical-align: top;
@@ -107,9 +108,6 @@
 
 .q_7_4_box{
   display: inline-block;
-  width: 300px;
-
-
 }
 
 .q_7_4_box_flexible{

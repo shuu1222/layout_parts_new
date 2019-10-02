@@ -40,6 +40,14 @@
   width: 100%;
 }
 
+.table_q4:first-child{
+  margin-top: 0;
+}
+
+.table_q4:last-child{
+  margin-bottom: 0;
+}
+
 .data_table{
   display: table-cell;
   text-align: center;

@@ -2,16 +2,19 @@
 
 /* 回答はここに書いてね */
 .big_box{
+  background: #ecf1f2;
   width: 500px;
   height: 500px;
+  font-size: 30px;
   position: relative;
-margin: auto;
+  margin: auto;
+
 }
 
 .square_box{
+  position: absolute;
   width: 100px;
   height: 100px;
-  position: absolute;
   text-align: center;
   line-height: 100px;
   font-weight: bold;
@@ -21,13 +24,14 @@ margin: auto;
 position: fixed;
 top: 10px;
 left: 10px;
-  background-color: #2b69a3;
+background-color: #2b69a3;
 }
 
 .box_one{
   top: 40px;
   left: 200px;
   background-color: #ffefd3;
+
 }
 
 .box_two{
@@ -45,7 +49,7 @@ left: 10px;
   top: 280px;
   right: 120px;
   background-color: #8b7a5e;
-  z-index: 0.5;
+  z-index: 2;
 }
 
 .box_five{
@@ -70,6 +74,7 @@ left: 10px;
   top: 120px;
   left: 120px;
   background-color: #de70cf;
+  z-index: 2;
 }
 
 .box_five:after{
@@ -83,7 +88,21 @@ left: 10px;
   right:0;
   background-color: #9fd6d2;
   content: "";
-  z-index: 1;
+  z-index: 3;
+}
+
+.box_one:after{
+  position: absolute;
+  /* position absoluteを再度追加しないと適応されない　⇒　div内にあるはずなのに.square_boxクラスから外れる？
+　　　描画後から追加されるのでクラスは適応されない？
+  */
+  height: 20px;
+  width: 20px;
+  top:80px;
+  left:0;
+  background-color: #ffefd3;
+  content: "";
+  z-index: 3;
 }
 
 /* 回答はここに書いてね */

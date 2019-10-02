@@ -9,11 +9,11 @@
 }
 
 .big_box{
-  width: 940px;
-  padding: 20px;
   background-color: #eff3f4;
-  /* margin センター揃え（上下０、左右auto) */
   margin: 0 auto;
+  /* margin センター揃え（上下０、左右auto) */
+  padding: 20px;
+  width: 940px;
 }
 
 .big_box .outer_box:first-child{

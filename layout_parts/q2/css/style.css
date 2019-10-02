@@ -5,23 +5,25 @@
   width: 900px;
   margin: 0 auto;
   padding: 20px;
-
+  background-color: #ECF1F2;
 }
 
-.img1{
+.img_left{
   float: left;
-  padding-right: 20px;
-  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
-.img2{
+.img_right{
   float: right;
-  padding-left: 20px;
-  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
-.vr_text{
+.img_text{
   font-size: 18px;
   line-height: 22px;
-}
+  word-break: break-all;
+  /* break all は単語内であっても自由に会合されます。 */
+
 /* 回答はここに書いてね */

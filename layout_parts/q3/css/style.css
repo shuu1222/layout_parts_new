@@ -19,27 +19,17 @@
 
 
 
-.menutable > td:nth-child(1){
+.weight_table tr th{
   background-color: #2244aa;
   font-size: 18px;
   line-height: 26px;
   color: #fff;
 }
-
-/* .weight_table > thead > tr > td{
-  background-color: #2244aa;
-  font-size: 18px;
-  line-height: 26px;
-  color: #fff;
-} */
-.weight_table > thead > tr:first-child > td{
-  background-color: #2244aa;
-  font-size: 18px;
-  line-height: 26px;
-  color: #fff;
+.weight_table .menutable:nth-child(2n+2){
+  background-color: #ecf1f2;
 }
 
-.weight_table > tbody > tr:last-child > td{
+.weight_table > tbody > tr:last-child{
   border-top: dashed #000 2px;
 }
 /* 回答はここに書いてね */
