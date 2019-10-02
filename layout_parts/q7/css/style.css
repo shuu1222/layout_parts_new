@@ -85,7 +85,6 @@
   font-size: 16px;
   vertical-align: middle;
   box-sizing: border-box;
-  margin: 0 20px;
 
 }
 
@@ -100,25 +99,25 @@
   font-size: 16px;
 }
 
-.q_7_4_inner{
+.q_7_5_inner{
   font-size: 0;
   /* 親要素のfont-sizeを0にし、子要素で再度font-sizeを指定することで、余白を消す */
-
 }
 
-.q_7_4_box{
+.q_7_5_box{
   display: inline-block;
+  width: 300px;
 }
 
-.q_7_4_box_flexible{
+.q_7_5_box_flexible{
   display: inline-block;
   width: 100%;
-  margin-left: -400px;
-  padding-left: 450px;
+  margin-left: -300px;
+  padding-left: 350px;
   box-sizing: border-box;
 }
 
-.q_7_4_text{
+.q_7_5_text{
   font-size: 16px;
 }
 
