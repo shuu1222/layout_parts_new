@@ -2,13 +2,11 @@
 
 /* 回答はここに書いてね */
 
-
 .weight_table{
   border: 1px solid #dedede;
   width: 100%;
-
+  table-layout:fixed;
 }
-
 .weight_table th,
 .weight_table td{
   border: 1px solid #dedede;
@@ -16,9 +14,6 @@
   vertical-align: middle;
   text-align: center;
 }
-
-
-
 .weight_table tr th{
   background-color: #2244aa;
   font-size: 18px;
@@ -28,8 +23,7 @@
 .weight_table .menutable:nth-child(2n+2){
   background-color: #ecf1f2;
 }
-
-.weight_table > tbody > tr:last-child{
+.menutable:last-child{
   border-top: dashed #000 2px;
 }
 /* 回答はここに書いてね */

@@ -8,14 +8,14 @@
 	padding: 10px 0;
 		width: 110px;
 }
-.box_text6-1{
+.margin_align_text{
 	background-color: #e6f2ff;
 	padding: 10px 0;
 	width: 90px;
 	text-align: center;
 }
 
-.box_text6-1_align{
+.box_textalign{
 	text-align: center;
 }
 
@@ -24,11 +24,6 @@
 }
 
 .box1_align{
-	display: inline-block;
-}
-
- .p_textalign{
-	text-align: center;
 	display: inline-block;
 }
 
@@ -53,7 +48,7 @@
 
 /* Q6-2-2 */
 
-.q6_2_flex{
+.flex_around{
 	justify-content: center;
 	align-items: center;
 	display: flex;
