@@ -10,7 +10,7 @@
   clear: both;
 }
 
-.q7_1_left {
+.float_box {
   float: left;
   font-size: 16px;
   box-sizing: border-box;
@@ -20,21 +20,21 @@
 /* border-box　→　paddingとborderがwidthとheightの中に含まれるようになる
 余白や境界線の太さに影響されずにボックスの大きさを決めることが可能 */
 
-.q7_1_left{
+.float_box{
     margin-left: 50px;
 }
 /* 真ん中の余白 */
 
-.q7_1_left:nth-child(1) {
+.float_box:nth-child(1) {
   margin-left: 0;
 }
 
-.q7_1_left {
+.float_box {
   width: 225px;
 }
 
 /* Q7_2 */
-.q7_twrap{
+.table_box{
   display: table-cell;
   width: 225px;
   padding-left : 50px;
@@ -48,13 +48,13 @@
 /* border-spacingは（上下）、（左右）両2サイドのくくりでしか余白を作れない */
 
 
-.q7_twrap:nth-child(1) {
+.table_box:nth-child(1) {
   padding: 0;
 }
 
-/* Q7_3 */
+/* q7-3 */
 
-.q7_3{
+.inline_inner{
   font-size: 0;
 
 }
@@ -99,17 +99,17 @@
   font-size: 16px;
 }
 
-.q_7_5_inner{
+.margiin_inner{
   font-size: 0;
   /* 親要素のfont-sizeを0にし、子要素で再度font-sizeを指定することで、余白を消す */
 }
 
-.q_7_5_box{
+.margiin_box{
   display: inline-block;
   width: 300px;
 }
 
-.q_7_5_box_flexible{
+.margiin_box_flexible{
   display: inline-block;
   width: 100%;
   margin-left: -300px;
@@ -117,7 +117,7 @@
   box-sizing: border-box;
 }
 
-.q_7_5_text{
+.margiin_text{
   font-size: 16px;
 }
 
