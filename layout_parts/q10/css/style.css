@@ -2,7 +2,7 @@
 
 /* 回答はここに書いてね */
 
-.dialog {
+.balloon {
   position: relative; /* 三角の位置を固定 */
   width: 500px;
   padding: 20px;
@@ -15,18 +15,18 @@
   margin: 0 auto;
   text-align: left;
 }
-.dialog::before,
-.dialog::after { /* 三角 の位置*/
+.balloon::before,
+.balloon::after { /* 三角 の位置*/
   position: absolute;
   left: 5%;
   border: 25px solid transparent;
   content: '';
 }
-.dialog::before { /* 黒い三角*/
+.balloon::before { /* 黒い三角*/
   border-top-color: #222;
   bottom: -50px;
 }
-.dialog::after { /* 白地 */
+.balloon::after { /* 白地 */
   border-top-color: #fff;
   bottom: -43px;
 }
