@@ -20,10 +20,10 @@
   line-height: 26px;
   color: #fff;
 }
-.menutable:nth-child(2n + 2) {
+.menutable:nth-child(even) {
   background-color: #ecf1f2;
 }
 .tablebody .menutable:last-child {
-  border-top: dashed #000 2px;
+  border-bottom: dashed #000 2px;
 }
 /* 回答はここに書いてね */

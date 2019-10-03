@@ -2,67 +2,67 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
-    <title>基本レイアウト・パーツ</title>
-    <link rel="stylesheet" href="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/css/reset.css">
-    <link rel="stylesheet" href="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/css/base.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>基本レイアウト・パーツ</title>
+  <link rel="stylesheet" href="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/css/reset.css">
+  <link rel="stylesheet" href="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/css/base.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <h1 class="title">基本レイアウト・パーツ</h1>
-        <h2 class="headline">
-            <p class="headline__text">Q8. ボタンパーツ ＆ フォーム</p>
-        </h2>
-        <div class="box">
-            <div class="box__inner">
-                <h3 class="box__headline">
-                    <p class="box__headline__text">ー Q8-1 ボタンパーツ ー</p>
-                </h3>
-                <!--
+  <div class="wrapper">
+    <h1 class="title">基本レイアウト・パーツ</h1>
+    <h2 class="headline">
+      <p class="headline__text">Q8. ボタンパーツ ＆ フォーム</p>
+    </h2>
+    <div class="box">
+      <div class="box__inner">
+        <h3 class="box__headline">
+          <p class="box__headline__text">ー Q8-1 ボタンパーツ ー</p>
+        </h3>
+        <!--
 この問題は特に難しいプロパティは使いませんので、普通にやれば簡単にボタンを作ることができます。
 ただ、意識していただきたいのは、classを適切にふることで共通化できるスタイルは共通化してしまうということです。
 この問題もHTMLはすでに記述してありますので、ボタンのdivにclassを付与してスタイルを当ててください。
 .q8--btnにfont-sizeを0として指定してあるので必ずボタン部分でfont-sizeを指定してください。
 -->
-                <!-- 回答はここに書いてね -->
-                <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
-                <!-- 新たにタグは追加しなくてもできます。 -->
-                <div class="q8 q8--btn ">
-                    <p class="q8__title">ー small ー</p>
-                    <div class="q8_button fir_button s_button">common</div>
-                    <div class="q8_button sec_button s_button">error</div>
-                    <div class="q8_button thir_button s_button">disabled</div>
-                    <div class="q8_button four_button s_button btn_shadow">shadow</div>
-                </div>
+        <!-- 回答はここに書いてね -->
+        <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
+        <!-- 新たにタグは追加しなくてもできます。 -->
+        <div class="q8 q8--btn ">
+          <p class="q8__title">ー small ー</p>
+          <div class="q8_button fir_button s_button">common</div>
+          <div class="q8_button sec_button s_button">error</div>
+          <div class="q8_button thir_button s_button">disabled</div>
+          <div class="q8_button four_button s_button btn_shadow">shadow</div>
+        </div>
 
-                <div class="q8 q8--btn">
-                    <p class="q8__title">ー middle ー</p>
-                    <div class="q8_button fir_button m_button">common</div>
-                    <div class="q8_button sec_button m_button">error</div>
-                    <div class="q8_button thir_button m_button">disabled</div>
-                    <div class="q8_button four_button m_button btn_shadow">shadow</div>
-                </div>
+        <div class="q8 q8--btn">
+          <p class="q8__title">ー middle ー</p>
+          <div class="q8_button fir_button m_button">common</div>
+          <div class="q8_button sec_button m_button">error</div>
+          <div class="q8_button thir_button m_button">disabled</div>
+          <div class="q8_button four_button m_button btn_shadow">shadow</div>
+        </div>
 
-                <div class="q8 q8--btn">
-                    <p class="q8__title">ー large ー</p>
-                    <div class="q8_button fir_button l_button">common</div>
-                    <div class="q8_button sec_button l_button">error</div>
-                    <div class="q8_button thir_button l_button">disabled</div>
-                    <div class="q8_button four_button l_button btn_shadow">shadow</div>
-                </div>
-                <!-- 回答はここに書いてね -->
-            </div>
+        <div class="q8 q8--btn">
+          <p class="q8__title">ー large ー</p>
+          <div class="q8_button fir_button l_button">common</div>
+          <div class="q8_button sec_button l_button">error</div>
+          <div class="q8_button thir_button l_button">disabled</div>
+          <div class="q8_button four_button l_button btn_shadow">shadow</div>
+        </div>
+        <!-- 回答はここに書いてね -->
+      </div>
 
-            <div class="box__inner">
-                <h3 class="box__headline">
-                    <p class="box__headline__text">ー Q8-2 フォーム ー</p>
-                </h3>
-                <!--
+      <div class="box__inner">
+        <h3 class="box__headline">
+          <p class="box__headline__text">ー Q8-2 フォーム ー</p>
+        </h3>
+        <!--
 Webサイトを作る際、コンタクトフォームを実装する機会がとても多くあります。
 ここで使われるタグは一般的にはデザインするのが難しいと言われていますが、それをやらないといけない状況は結構多いです。（簡単リセットされない、:focusや:activeを使う）
 まずは元々タグにあてられているスタイルを解除して、フラットな状態にしてからスタイルを当てていくことが大事です。
@@ -98,81 +98,81 @@ answerで入力した値を自分で作ったフォームに全く同じよう�
 ・:before
 ・:after
 -->
-                <!-- 回答はここに書いてね -->
-                <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
-                <div class="q8">
-                    <div class="q8_form clearfix">
-                        <div class="form_title">
-                            <h1>Form Exercise</h1>
-                        </div>
-                        <!-- 箱、formbox leftに左側のフォームを入れる -->
-                        <form class="form_wrapp clearfix">
-                            <ul class="formbox_left">
-                                <li class="clearfix form_width">
-                                    <label class="what_to_input">名前<span class="required">*</span></label>
-                                    <input class="q8_input" type="text" name="name" required="required">
-                                </li>
-
-                                <li class="clearfix form_width">
-                                    <div class="what_to_input">性別</div>
-                                    <div class="q8_radio">
-                                        <div class="q8_input_r">
-                                            <input type="radio" name="gender" id="select1" value="male">
-                                            <label class="radio_label" for="select1">男性</label>
-                                            <input type="radio" name="gender" id="select2" value="female">
-                                            <label class="radio_label" for="select2">女性</label>
-                                        </div>
-                                    </div>
-                                </li>
-                                <!-- selectには疑似要素を指定できないのでwrapする -->
-                                <li class="clearfix form_width">
-                                    <label class="what_to_input">出身</label>
-                                    <div class="select_wrap">
-                                        <select class="q8_input q8_select_input" name="hometown" id="">
-																					<option value="tokyo">東京</option>
-																					<option value="chiba">千葉</option>
-																					<option value="saitama">埼玉</option>
-																					<option value="kanagawa">神奈川</option>
-																				</select>
-                                    </div>
-                                </li>
-
-                                <li class="clearfix form_width">
-                                    <label class="what_to_input">Eメール<span class="required">*</span></label>
-                                    <input class="q8_input" placeholder="ex)hoge@gmail.com" type="text" name="email" required="required">
-                                </li>
-
-
-                                <li class="clearfix form_width">
-                                    <label class="what_to_input">電話番号</label>
-                                    <input class="q8_input" placeholder="ex)08012345678" type="text" name="tel" required="">
-                                </li>
-
-                                <li class="clearfix form_width">
-                                    <label>
-																			<input type="checkbox" name="twenty" class="checkbox-input">
-																			<span class="checkbox-parts">20歳以上です</span>
-																		</label>
-                                </li>
-                                <!-- 送信ボタン -->
-                                <li class="clearfix submit_button form_width">
-                                    <button class="button_s" type="submit">送信</button>
-                                </li>
-                            </ul>
-                            <!-- textareaタグの開始タグと終了タグが同じ行にないと中のplaceholderが表示されない -->
-
-                            <div class="formbox_right clearfix memo_box">
-                                <textarea placeholder="何かあれば入力してください。" class="memo" type="text" name="message"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+        <!-- 回答はここに書いてね -->
+        <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
+        <div class="q8">
+          <div class="q8_form clearfix">
+            <div class="form_title">
+              <h1>Form Exercise</h1>
             </div>
-            <!-- 回答はここに書いてね -->
+            <!-- 箱、formbox leftに左側のフォームを入れる -->
+            <form class="form_wrapp clearfix">
+              <ul class="formbox_left">
+                <li class="clearfix form_width">
+                  <label class="what_to_input">名前<span class="required">*</span></label>
+                  <input class="q8_input" type="text" name="name" required="required">
+                </li>
 
+                <li class="clearfix form_width">
+                  <div class="what_to_input">性別</div>
+                  <div class="q8_radio">
+                    <div class="q8_input_r">
+                      <input type="radio" name="gender" id="select1" value="male">
+                      <label class="radio_label" for="select1">男性</label>
+                      <input type="radio" name="gender" id="select2" value="female">
+                      <label class="radio_label" for="select2">女性</label>
+                    </div>
+                  </div>
+                </li>
+                <!-- selectには疑似要素を指定できないのでwrapする -->
+                <li class="clearfix form_width">
+                  <label class="what_to_input">出身</label>
+                  <div class="select_wrap">
+                    <select class="q8_input q8_select_input" name="hometown" id="">
+                      <option value="tokyo">東京</option>
+                      <option value="chiba">千葉</option>
+                      <option value="saitama">埼玉</option>
+                      <option value="kanagawa">神奈川</option>
+                    </select>
+                  </div>
+                </li>
+
+                <li class="clearfix form_width">
+                  <label class="what_to_input">Eメール<span class="required">*</span></label>
+                  <input class="q8_input" placeholder="ex)hoge@gmail.com" type="text" name="email" required="required">
+                </li>
+
+
+                <li class="clearfix form_width">
+                  <label class="what_to_input">電話番号</label>
+                  <input class="q8_input" placeholder="ex)08012345678" type="text" name="tel" required="">
+                </li>
+
+                <li class="clearfix form_width">
+                  <label>
+                    <input type="checkbox" name="twenty" class="checkbox-input">
+                    <span class="checkbox-parts">20歳以上です</span>
+                  </label>
+                </li>
+                <!-- 送信ボタン -->
+                <li class="clearfix submit_button form_width">
+                  <button class="button_s" type="submit">送信</button>
+                </li>
+              </ul>
+              <!-- textareaタグの開始タグと終了タグが同じ行にないと中のplaceholderが表示されない -->
+
+              <div class="formbox_right clearfix memo_box">
+                <textarea placeholder="何かあれば入力してください。" class="memo" type="text" name="message"></textarea>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
+      <!-- 回答はここに書いてね -->
+
     </div>
-    </div>
+  </div>
+  </div>
 </body>
 
 </html>
