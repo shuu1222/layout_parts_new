@@ -3,31 +3,39 @@
 /* 回答はここに書いてね */
 
 .balloon {
-  position: relative; /* 三角の位置を固定 */
-  width: 500px;
-  padding: 20px;
-  background: #fff;
-  border: 5px solid #222;
-  border-radius: 30px;
-  font-size: 16px;
-  line-height: 16px;
-  margin: 0 auto;
-  text-align: left;
+    position: relative;
+    /* 三角の位置を固定 */
+    width: 500px;
+    padding: 20px;
+    background: #fff;
+    border: 5px solid #222;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 auto;
+    text-align: left;
 }
+
 .balloon::before,
-.balloon::after { /* 三角 の位置*/
-  position: absolute;
-  left: 5%;
-  border: 25px solid transparent;
-  content: '';
+.balloon::after {
+    /* 三角 の位置*/
+    position: absolute;
+    left: 5%;
+    border: 25px solid transparent;
+    content: '';
 }
-.balloon::before { /* 黒い三角*/
-  border-top-color: #222;
-  bottom: -50px;
+
+.balloon::before {
+    /* 黒い三角*/
+    border-top-color: #222;
+    bottom: -55px;
 }
-.balloon::after { /* 白地 */
-  border-top-color: #fff;
-  bottom: -43px;
+
+.balloon::after {
+    /* 白地 */
+    border-top-color: #fff;
+    bottom: -50px;
 }
+
 
 /* 回答はここに書いてね */

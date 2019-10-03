@@ -3,196 +3,193 @@
 /* 回答はここに書いてね */
 
 .clearfix:after {
-  display: block;
-  content: "";
-  clear: both;
+    display: block;
+    content: "";
+    clear: both;
 }
 
 .q8_button {
-  display: inline-block;
-  /* vertical-align: middle; */
-  text-align: center;
-  margin-left: 10px;
-  cursor: pointer;
+    display: inline-block;
+    /* vertical-align: middle; */
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
-.q8_content{
-  float: right;
-  width: 180px;
-  margin-bottom: 20px;
+.q8_content {
+    float: right;
+    width: 180px;
+    margin-bottom: 20px;
 }
 
-/* .q8_button:hover{
-
-} */
-
-
-
-.s_button{
-  border-radius: 3px;
-  padding: 0 15px;
-  font-size: 16px;
-  line-height: 26px;
-}
-.m_button{
-  border-radius: 5px;
-  padding: 0 20px;
-  font-size: 20px;
-  line-height: 32px;
-}
-.l_button{
-  border-radius: 7px;
-  padding: 0 25px;
-  font-size: 24px;
-  line-height: 38px;
+.s_button {
+    border-radius: 3px;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 26px;
 }
 
-.btn_shadow{
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0,0,0,0.12);
+.m_button {
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 32px;
 }
 
-.fir_button{
-  background-color: #00bcd4;
-  margin-left: 0;
-  color: #fff;
-
+.l_button {
+    border-radius: 7px;
+    padding: 0 25px;
+    font-size: 24px;
+    line-height: 38px;
 }
 
-.sec_button{
-  background-color: #ff4081;
-  color: #fff;
-
+.btn_shadow {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0, 0, 0, 0.12);
 }
 
-.thir_button{
-  background-color: #e5e5e5;
-  color: #fff;
-
+.fir_button {
+    background-color: #00bcd4;
+    margin-left: 0;
+    color: #fff;
 }
 
-.four_button{
-  background-color: #fff;
-  color: #222;
+.sec_button {
+    background-color: #ff4081;
+    color: #fff;
 }
+
+.thir_button {
+    background-color: #e5e5e5;
+    color: #fff;
+}
+
+.four_button {
+    background-color: #fff;
+    color: #222;
+}
+
 
 /* フォームここから */
 
-input, button, select, textarea {
+input,
+button,
+select,
+textarea {
     -webkit-appearance: none;
-    -moz-appearance:none;
-      appearance:none;}
-
-li{
-  list-style: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
-.q8_form{
-background-color: #ECF1F2;
-width: 700px;
-padding: 20px;
-margin: 0 auto;
+li {
+    list-style: none;
 }
 
-.form_width{
-  margin-top: 20px;
-  height: 25px;
-  text-align: right;
+.q8_form {
+    background-color: #ecf1f2;
+    width: 700px;
+    padding: 20px;
+    margin: 0 auto;
 }
 
-.what_to_input{
-  padding: 5px;
-  float: left;
-  text-align: right;
-  width: 90px;
-  vertical-align: bottom;
+.form_width {
+    margin-top: 20px;
+    height: 25px;
+    text-align: right;
 }
 
-.form_width:first-child{
-  margin-top: 0;
+.what_to_input {
+    padding: 5px;
+    float: left;
+    text-align: right;
+    width: 90px;
+    vertical-align: bottom;
 }
 
-.form_title{
-  width: 700px;
-  margin-bottom: 20px;
+.form_width:first-child {
+    margin-top: 0;
 }
 
-
-
-.form_title > h1{
-  font-weight: bolder;
-  display: flex;
-  align-items: center;
-  font-size: 24px;
+.form_title {
+    width: 700px;
+    margin-bottom: 20px;
 }
 
-.form_title > h1:after{
-  content: "";
-	flex-grow: 1;
-	height: 1.5px;
-	background: #ccc;
-	display: block;
-  margin-left: .4em;
+.form_title>h1 {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
 }
 
-.formbox_left{
-float: left;
-margin-bottom: 20px;
-  width: 300px;
+.form_title>h1:after {
+    content: "";
+    flex-grow: 1;
+    height: 1.5px;
+    background: #ccc;
+    display: block;
+    margin-left: 0.4em;
 }
 
-.formbox_right{
-  float: right;
-  height: 240px;
-  vertical-align: top;
-  width: 380px;
+.formbox_left {
+    float: left;
+    width: 300px;
 }
 
-.submit_button{
-  text-align: right;
-  left: 0;
-  width: 300px;
-  height: 24px;
+.formbox_right {
+    float: right;
+    height: 240px;
+    vertical-align: top;
+    width: 380px;
 }
 
-.q8_input{
-  width: 170px;
-  float: right;
-  border-style: none;
-  padding: 5px;
-  border-radius: 3px;
-  font-size: 12px;
-  line-height: 12px;
+.submit_button {
+    text-align: right;
+    width: 300px;
+    height: 24px;
+    margin-bottom: 0;
 }
 
-input:focus, textarea:focus{
-  /*フォーカスした時に影をつける*/
-   box-shadow:0px 0px 10px #00bcd4;
-   outline: none;
+.q8_input {
+    width: 170px;
+    float: right;
+    border-style: none;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 12px;
+}
 
-  }
+input:focus,
+textarea:focus {
+    /*フォーカスした時に影をつける*/
+    box-shadow: 0px 0px 10px #00bcd4;
+    outline: none;
+}
 
-.q8_input_r{
-  width: 170px;
-  float: left;
+.q8_input_r {
+    width: 170px;
+    float: left;
     padding: 3px;
-  border-radius: 3px;
-  font-size: 16px;
-  line-height: 12px;
+    font-size: 16px;
+    line-height: 12px;
 }
 
-.radio_label{
-  margin-right: 5px;
+.radio_label {
+    margin-right: 5px;
 }
 
-.q8_select_input{
-  width: 180px;
+.q8_select_input {
+    width: 180px;
 }
 
-
+.q8_select_input:focus {
+    outline: none;
+}
 
 .select_wrap {
     position: relative;
 }
+
 
 /* 三角の作成
 1、四角のボーダーを作成
@@ -200,133 +197,134 @@ input:focus, textarea:focus{
 3、transformプロパティを使用して45度回転させます。 */
 
 .select_wrap:before {
-  display: block;
-  position: absolute;
-  top: 4px;
-  right: 10px;
-  width: 8px;
-  height: 8px;
-  border: 2px solid;
-  border-color:  transparent #ECF1F2 #ECF1F2 transparent;
-  transform: rotate(45deg);
-  content: "";
-  pointer-events: none;
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid;
+    border-color: transparent #ecf1f2 #ecf1f2 transparent;
+    transform: rotate(45deg);
+    content: "";
+    pointer-events: none;
 }
+
+
 /* pointer-eventsというプロパティでクリック出来ないように */
 
-.q8_radio{
-  display: inline-block;
+.q8_radio {
+    display: inline-block;
 }
 
-.q8_radio input{
-	display: none;
-}
-.q8_radio label{
-	display: inline-block;
-	position: relative;
-	cursor: pointer;
-	padding: 3px 3px 3px 25px;
-float: left;
+.q8_radio input {
+    display: none;
 }
 
-
-.q8_radio label:before{
-	position: absolute;
-  top: 50%;
-  left: 0;
-	content: "";
-	width: 14px;
-	height: 14px;
-	margin-top: -8px;
-	background: #fff;
-  border:1px solid #ccc;
-	border-radius: 50%;
+.q8_radio label {
+    position: relative;
+    cursor: pointer;
+    padding: 3px 3px 3px 25px;
+    float: left;
 }
-.q8_radio input[type="radio"]:checked + label:after {
-  position: absolute;
+
+.q8_radio label:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: "";
+    width: 14px;
+    height: 14px;
+    margin-top: -8px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.q8_radio input[type="radio"]:checked+label:after {
+    position: absolute;
     top: 50%;
     left: 4px;
     content: "";
     width: 8px;
     height: 8px;
     margin-top: -4px;
-    background-color: #00BCD4;
+    background-color: #00bcd4;
     border-radius: 50%;
 }
 
-
-
-.memo{
-  width: 100%;
-  height: 200px;
-  padding: 10px;
-  border-radius: 3px;
-  background-color: #FFF;
-  font-size: 12px;
-  box-sizing: border-box;
-  resize: none;
-  border-style: none;
+.memo {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 12px;
+    box-sizing: border-box;
+    resize: none;
+    border-style: none;
 }
 
-
-.button_s{
-  background-color: #00bcd4;
-  color: #fff;
-  border: none;
-  border-radius:5px;
-  padding: 0 10px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 26px;
-  outline: none;
-
+.button_s {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 26px;
+    outline: none;
 }
 
-.button_s:active{
-  background-color: #fff;
-  color: #00bcd4;
-  border: none;
-  border-radius:5px;
-  padding: 0 10px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 26px;
-  outline: none;
+.button_s:active {
+    background-color: #fff;
+    color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 26px;
+    outline: none;
 }
 
-.checkbox-input{
-  display: none;
+.checkbox-input {
+    display: none;
 }
-.checkbox-parts{
-  padding-left: 20px;
-  position:relative;
+
+.checkbox-parts {
+    padding-left: 20px;
+    position: relative;
 }
-.checkbox-parts::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #ccc;
-  background-color: #fff;
+
+.checkbox-parts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
 }
+
 
 /* チェックの部分 */
-.checkbox-input:checked + .checkbox-parts::after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: -4px;
-  left: 5px;
-  width: 8px;
-  height: 15px;
-  transform: rotate(50deg);
-  border-bottom: 2px solid #00bcd4;
-  border-right: 2px solid #00bcd4;
+
+.checkbox-input:checked+.checkbox-parts::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: 5px;
+    width: 8px;
+    height: 15px;
+    transform: rotate(50deg);
+    border-bottom: 2px solid #00bcd4;
+    border-right: 2px solid #00bcd4;
 }
 
-
-.required{
-  color: red;
+.required {
+    color: #ff4081;
 }

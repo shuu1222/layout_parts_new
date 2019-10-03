@@ -2,28 +2,28 @@
 
 /* 回答はここに書いてね */
 
-.weight_table{
+.table table{
   border: 1px solid #dedede;
   width: 100%;
-  table-layout:fixed;
+  table-layout: fixed;
 }
-.weight_table th,
-.weight_table td{
+.menutable th,
+.menutable td {
   border: 1px solid #dedede;
   padding: 10px;
   vertical-align: middle;
   text-align: center;
 }
-.weight_table tr th{
+.menutable th {
   background-color: #2244aa;
   font-size: 18px;
   line-height: 26px;
   color: #fff;
 }
-.weight_table .menutable:nth-child(2n+2){
+.menutable:nth-child(2n + 2) {
   background-color: #ecf1f2;
 }
-.menutable:last-child{
+.tablebody .menutable:last-child {
   border-top: dashed #000 2px;
 }
 /* 回答はここに書いてね */

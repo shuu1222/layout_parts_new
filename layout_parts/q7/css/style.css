@@ -1,97 +1,124 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+
+
 /* Q7_1 */
+
 .clearfix:after {
-  display: block;
-  content: "";
-  clear: both;
+    display: block;
+    content: "";
+    clear: both;
 }
 
 .float_box {
-  float: left;
-  font-size: 16px;
-  box-sizing: border-box;
-  margin-left: 50px;
-  width: 225px;
+    float: left;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-left: 50px;
+    width: 225px;
 }
 
 .float_box:first-child {
-  margin-left: 0;
+    margin-left: 0;
 }
+
 
 /* Q7_2 */
-.table_box{
-  display: table-cell;
+
+.table_box {
+    display: table-cell;
+    padding-left: 50px;
 }
 
-.q7_in{
-  display: table;
-   border-collapse: separate;
+.table_text {
+    width: 205px;
 }
+
+.q7_in {
+    display: table;
+    border-collapse: separate;
+}
+
+
 /* border-spacingは（上下）、（左右）両2サイドのくくりでしか余白を作れない */
-.table_box:nth-child(1) {
-  padding: 0;
+
+.table_box:first-child {
+    padding: 0;
 }
+
+
 /* q7-3 */
-.inline_inner{
-  font-size: 0;
+
+.inline_inner {
+    font-size: 0;
 }
 
-.q7inline{
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 16px;
-  box-sizing: border-box;
+.q7inline {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 225px;
+    margin-left: 50px;
 }
 
-.q7inline:nth-child(1) {
-  margin-left: 0;
+.q7inline:first-child {
+    margin-left: 0;
 }
+
+
 /* Q7_4 */
+
 .q7_flexbox {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 .flex_text {
-  font-size: 16px;
-  vertical-align: middle;
-  box-sizing: border-box;
+    font-size: 16px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 225px;
+    margin-left: 50px;
 }
 
-.box_width{
-  width:225px;
+.flex_text:first-child {
+    margin-left: 0;
+}
+
+.box_width {
+    width: 225px;
 }
 
 .q7--margin .q7__box {
-  vertical-align: top;
+    vertical-align: top;
 }
 
-.margiin_text{
-  font-size: 16px;
+.margiin_text {
+    font-size: 16px;
 }
 
-.margiin_inner{
-  font-size: 0;
+.margiin_inner {
+    font-size: 0;
 }
+
+
 /* 親要素のfont-sizeを0にし、子要素で再度font-sizeを指定することで、余白を消す */
 
-.margiin_box{
-  display: inline-block;
-  width: 300px;
+.margiin_box {
+    display: inline-block;
+    width: 300px;
 }
 
-.margiin_box_flexible{
-  display: inline-block;
-  width: 100%;
-  margin-left: -300px;
-  padding-left: 350px;
-  box-sizing: border-box;
+.margiin_box_flexible {
+    display: inline-block;
+    width: 100%;
+    margin-left: -300px;
+    padding-left: 350px;
+    box-sizing: border-box;
 }
-
-
 
 
 /* 回答はここに書いてね */

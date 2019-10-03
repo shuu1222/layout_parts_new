@@ -3,66 +3,64 @@
 /* 回答はここに書いてね */
 
 /* Q6-1 */
-.box_text{
-	background-color: #e6f2ff;
-	padding: 10px 0;
-		width: 110px;
+.box_text {
+  background-color: #e6f2ff;
+  padding: 10px 0;
+  width: 110px;
 }
-.margin_align_text{
-	background-color: #e6f2ff;
-	padding: 10px 0;
-	width: 90px;
-	text-align: center;
-}
-
-.box_textalign{
-	text-align: center;
+.margin_align_text {
+  background-color: #e6f2ff;
+  padding: 10px 0;
+  width: 90px;
+  text-align: center;
 }
 
-.box1_margin{
-	margin: 0 auto;
+.box_textalign {
+  text-align: center;
 }
 
-.box1_align{
-	display: inline-block;
+.box1_margin {
+  margin: 0 auto;
+}
+
+.box1_align {
+  display: inline-block;
 }
 
 /* Q6-2-1 */
-.q6_around{
-	display: table;
-
+.q6_around {
+  display: table;
 }
 
-.table_box{
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-
+.table_box {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
-.p_table{
-	display: inline-block;
-	background-color: #fff;
-	padding: 10px
+.p_table {
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px;
 }
 
 /* Q6-2-2 */
 
-.flex_around{
-	justify-content: center;
-	align-items: center;
-	display: flex;
+.flex_around {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-.justify_text{
-	padding: 10px;
-	background-color: #fff;
-
+.justify_text {
+  padding: 10px;
+  background-color: #fff;
 }
 
 /* Q6-3-1 */
 
-.q6--position .q_margin, .stable_flex {
+.q6--position .q_margin,
+.stable_flex {
   position: relative;
 }
 
@@ -71,15 +69,14 @@
 .stable .q6box_inner {
   position: absolute;
   top: 0;
-	bottom: 0;
-	left: 0;
+  bottom: 0;
+  left: 0;
   right: 0;
   margin: auto;
 }
 
-
 .flex .q6box_inner {
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
